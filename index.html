@@ -15,10 +15,10 @@
                 <!-- Imagem do ebook ou air fryer -->
                 <div class="placeholder">[Imagem do Ebook]</div>
             </div>
-            <form id="emailForm" class="email-form">
+            <form id="emailForm" class="email-form" action="https://formspree.io/f/{FORM_ID}" method="POST">\n                <!-- Formspree endpoint placeholder -->\n                <input type="hidden" name="_next" value="/obrigado.html">\n                <input type="hidden" name="_subject" value="Novo lead do Air Fryer Meal Prep LP">
                 <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Quero o Ebook Grátis</button>
-                <p class="privacy">Nunca enviamos spam. Seu e-mail está seguro conosco.</p>
+                <button type="submit" id="submitBtn">Quero o Ebook Grátis</button>
+                <p class="privacy">Nunca enviamos spam. Seu e-mail está seguro conosco.</p>\n                <div id="formMessage"></div>
             </form>
             <ul class="benefits">
                 <li>✅ Receitas testadas e aprovadas</li>
